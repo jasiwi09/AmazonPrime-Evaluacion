@@ -1,0 +1,228 @@
+/* Main CSS*/
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(15, 23, 30, 1);
+}
+
+html {
+    font-size: 100%;
+}
+
+@font-face {
+    font-family: 'mi-fuente';
+    src: url('/fonts/BigShouldersStencilText.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+/* BANNER CSS */
+.banner-box {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(
+    90deg,
+    rgba(26, 35, 46, 1) 0%,
+    rgba(25, 36, 46, 1) 29%,
+    rgba(35, 52, 68, 1) 66%,
+    rgba(26, 35, 46, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+.nav-buttons a {
+    margin: 0 1.5rem 0rem 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+} .search-box .input-box {
+    border: solid 1px white;
+    padding: .3rem;
+} .search-box .input-box input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+} .search-box .input-box input:focus {
+    outline: none;
+} .search-box .user-box {
+    margin-left: 1rem;
+    background-color: rgb(59, 141, 255);
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+
+/* FILM BOX CSS */
+.area-box {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.film-box {
+    width: 80%;
+    position: relative;
+} .film-box .film-img {
+    display: flex;
+    margin-left: 15%;
+} .film-box .film-img img {
+    width: 55rem;
+    height: 32.5rem;
+}
+.film-box .film-img .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32.5rem;
+    background: linear-gradient(
+    38deg,
+    rgba(15, 23, 30, 1) 0%,
+    rgba(15, 23, 30, 1) 41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+}
+
+.film-box .film-info-box {
+    padding-top: 3rem;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    width: 60rem; 
+    height: 35rem;
+    
+} .film-box .film-info-box .film-title {
+    font-family: 'mi-fuente';
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}.film-box .film-info-box .film-desc {
+    width: 75%;
+    text-align: justify;
+} .film-box .film-info-box .film-type span {
+    color: rgb(72, 94, 117);
+    font-weight: 550;
+} .film-box .film-info-box .film-type .border-info {
+    border: solid 2px rgb(72, 94, 117);
+    border-radius: 4px;
+    padding: .025rem;
+} .film-box .film-info-box .film-info table {
+    margin: 0;
+    width: 100%;
+    text-align: start;
+} .film-box .film-info-box .film-info table tr .film-table-1 {
+    color: rgb(101, 121, 143);
+    font-weight: 550;
+    padding-bottom: 15px;
+
+} .film-box .film-info-box .film-info table tr .film-table-2 {
+    color: rgb(59, 141, 255);
+} .film-box .film-info-box .film-buttons {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-top: 10px;
+} .film-box .film-info-box .film-buttons span {
+    background-color: rgb(101, 121, 143);
+    border-radius: 4px;
+    padding: 9px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    
+} .film-box .film-info-box .film-buttons .button-play {
+    display: flex;
+    justify-content: space-between;
+} .film-box .film-info-box .film-buttons .button-play i {
+    font-size: 28px;
+    background-color: white;
+    color: rgb(101, 121, 143);
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    padding-right: 10px;
+} .film-box .film-info-box .film-buttons .button-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+} .film-box .film-info-box .film-buttons .button-download i {
+    font-size: 20px;
+} .film-box .film-related {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}.film-box .film-related span {
+    font-size: 25px;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px gray;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}.film-box .film-related .grid-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}.film-box .film-related .grid-box img {
+    width: 95%;
+    height: 100%;
+}
+
+
+.footer-box {
+    margin: 20px 0 0px 0;
+    width: 100%;
+    background-color: rgba(26, 35, 46, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-box .footer-info span {
+    color: rgb(59, 141, 255);
+    padding: 0 10px 0 10px;
+
+}
+
+.footer-box .footer-info .copyright {
+    color: rgb(101, 121, 143);
+}
+
+
+
+
+
+
+
+
+
